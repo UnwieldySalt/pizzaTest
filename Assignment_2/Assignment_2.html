@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Ass2</title>	    <!--title-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSSStyle/site.css">
+	</head>
+
+	<body>
+        <h1>Mario's Pizzeria</h1>
+              
+        <!-- user info box-->
+        <form method="post">       
+        <fieldset> 
+            <h2>Your Information: </h2>   
+            <label>
+                Name:
+                <input name="submitted-name" autocomplete="Name" >
+            </label>
+            <br>
+            <label>
+                Email:
+                <input name="submitted-email" autocomplete="email" >
+            </label>
+            <br>
+            <label>
+                Address: 
+                <input name="submitted-address" autocomplete="address" >
+            </label>
+        </fieldset>
+        <br>
+        </form>
+
+        <!-- makes a box with this in it -->
+        <form method="post2">
+            <fieldset>
+                <h2>Pizza Maker: </h2>
+                <p>
+                <label for="pizzaSize">Pizza Options: </label>
+                <!-- Creates a drop down selection -->
+                <br><select id="pizzaSize"><br>
+                <option value="">--Size--</option>
+                <option value="sm">Small</option>
+                <option value="med">Medium</option>
+                <option value="lrg">Large</option>
+                <option value="xlrg">Extra Large</option>
+                </select>
+                <!-- Creates a drop down selection -->
+                <br><select id="pizzaCount"><br>
+                <option value="">--Amount--</option>
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+                <option value="four">Four</option>
+                </select>
+                </p>
+                <!-- selector dots -->
+                <p>Toppings:
+                <input type="radio" name="Toppings" value="cheese" > Cheese</label>
+                <input type="radio" name="Toppings" value="pepperoni" > Pepperoni</label>
+                <input type="radio" name="Toppings" value="mushroom" > Mushrooms</label>
+                <input type="radio" name="Toppings" value="pepper" > Peppers</label>
+                <input type="radio" name="Toppings" value="bacon" > Bacon</label>
+                <input type="radio" name="Toppings" value="ham" > Ham</label>
+                <input type="radio" name="Toppings" value="pineapple" > Pineapple </p>
+                <!--sign me up for emails baby! -->
+                <p><input type="checkbox" name="noti" > Sign me up for Email Notifications<br>
+                <!-- comments -->
+                Other Requests.<br>
+                <input type="text" name="char" value=""> <br>
+                <button>Place Order</button></p>
+            </fieldset>
+        </form>
+
+	</body>
+</html>
+
